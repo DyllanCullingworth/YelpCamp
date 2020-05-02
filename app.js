@@ -29,7 +29,6 @@ mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
 var mongooseConnect = mongoose.connect(process.env.DATABASEURL);
-// var mongooseConnect = mongoose.connect("mongodb+srv://DR_Cullingworth:9cf32JeKk8rFLKnC@cluster0-vifd4.mongodb.net/yelp_camp?retryWrites=true&w=majority")
 mongooseConnect.then(() => {
 	console.log("Connected to DB!");
 }).catch(err =>	{
